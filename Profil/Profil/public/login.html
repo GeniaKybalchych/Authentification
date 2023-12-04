@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Se connecter</h2>
+        <div class="social-login">
+            <button class="google-btn">Google</button>
+            <button class="facebook-btn">Facebook</button>
+        </div>
+        <p>Ou</p>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Courriel" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <button type="button" id="login-btn" onclick="handleLogin()">Se connecter</button>
+        </form>
+        <p class="reset-password">Reinitialiser votre mot de passe?</p>
+        <p class="signup">Vous êtes nouveau? <a href="/signup.html">Créer un compte</a></p>
+    </div>
+    <div id="login-message" style="display: none;"></div>
+    <script src="/javascripts/login.js"></script>
+</body>
+</html>

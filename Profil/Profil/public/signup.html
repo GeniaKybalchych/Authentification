@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+</head>
+<body>
+    <div id="signup-container">
+        <div id="form-container">
+            <h2>Créer un compte</h2>
+            <div class="social-buttons">
+                <button class="social-button google">Google</button>
+                <button class="social-button facebook">Facebook</button>
+            </div>
+            <p class="separator">Ou</p>
+            <form id="signup-form">
+                <input type="email" id="email" placeholder="Courriel" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <button type="submit" id="signup-btn" onclick="handleSignUp(event)">Créer un compte</button>
+            </form>
+            <div class="login-link">
+                Vous avez déjà un compte? <a href="/login.html">Se connecter</a>
+            </div>
+        </div>
+    </div>
+    <div id="signup-message" style="display: none;"></div>
+    <script src="/javascripts/signup.js"></script>
+</body>
+</html>
